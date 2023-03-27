@@ -47,8 +47,8 @@ public class primitiveCalculate {
 
             System.out.println("\nExit = 0, Next = 1: choice enter >");
 
-            int out = scanner.nextInt();
-            if (out == 0){
+            int outProgram = scanner.nextInt();
+            if (outProgram == 0){
                 System.out.println("\n\uD83D\uDC4BSee you soon!");
                 flag = 0;
             }
