@@ -1,8 +1,6 @@
 import com.google.gson.*;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.text.MessageFormat;
-import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class ClassMAin {
@@ -14,29 +12,29 @@ public class ClassMAin {
                 "{\"фамилия\":\"Клочков\",\"оценка\":\"4\",\"предмет\":\"Информатика\"}," +
                 "{\"фамилия\":\"Кузнецова\",\"оценка\":\"3\",\"предмет\":\"Математика\"}]";
 
-        int[] x = new int[]{json.length()};
+        int[] numbers = {5, 1, 12, -5, 16, 2, 12, 14};
         parseJson(json);
-        bubbleSort(x);
+        bubbleSort(numbers);
 
     }
 
-    public static void bubbleSort(int[] arr) {
-        int n = arr.length;
+    public static void bubbleSort(int[] array) {
+        int n = array.length;
         try {
             FileWriter writer = new FileWriter("log.txt", true);
             writer.write("Original array: ");
             writer.write("\n");
             for (int i = 0; i < n-1; i++) {
                 for (int j = 0; j < n-i-1; j++) {
-                    if (arr[j] > arr[j+1]) {
+                    if (arr[j] > array[j+1]) {
                         int temp = arr[j];
-                        arr[j] = arr[j+1];
-                        arr[j+1] = temp;
+                        array[j] = array[j+1];
+                        array[j+1] = temp;
                         writer.write(number + " ");
                     }
                 }
-                writer.write(MessageFormat.format("{0} \n", Arrays.toString(arr)));
-                writer.write("After iteration " + (i * (arr.length - 1) + i + 1) + ": ");
+                writer.write(MessageFormat.format("{0} \n", Arrays.toString(array)));
+                writer.write("After iteration " + (i * (array.length - 1) + i + 1) + ": ");
                 writer.write("\n");
             }
             writer.close();
