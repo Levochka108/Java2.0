@@ -25,9 +25,6 @@ public class ClassMAin {
         try {
             FileWriter writer = new FileWriter("log.txt", true);
             writer.write("Original array: ");
-            for (int number : arr) {
-                writer.write(number + " ");
-            }
             writer.write("\n");
             for (int i = 0; i < n-1; i++) {
                 for (int j = 0; j < n-i-1; j++) {
@@ -35,13 +32,11 @@ public class ClassMAin {
                         int temp = arr[j];
                         arr[j] = arr[j+1];
                         arr[j+1] = temp;
+                        writer.write(number + " ");
                     }
                 }
                 writer.write(MessageFormat.format("{0} \n", Arrays.toString(arr)));
                 writer.write("After iteration " + (i * (arr.length - 1) + i + 1) + ": ");
-                for (int number : arr) {
-                    writer.write(number + " ");
-                }
                 writer.write("\n");
             }
             writer.close();
