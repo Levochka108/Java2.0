@@ -19,29 +19,32 @@ public class ClassMAin {
     }
 
     public static void bubbleSort(int[] array) {
-        int n = array.length;
         try {
-            FileWriter writer = new FileWriter("log.txt", true);
+            FileWriter writer = new FileWriter("log.txt");
             writer.write("Original array: ");
+            for (int number : numbers) {
+                writer.write(number + " ");
+            }
             writer.write("\n");
-            for (int i = 0; i < n-1; i++) {
-                for (int j = 0; j < n-i-1; j++) {
-                    if (arr[j] > array[j+1]) {
-                        int temp = arr[j];
-                        array[j] = array[j+1];
-                        array[j+1] = temp;
-                        writer.write(number + " ");
+
+            for (int i = 0; i < numbers.length - 1; i++) {
+                for (int j = 0; j < numbers.length - i - 1; j++) {
+                    if (numbers[j] > numbers[j + 1]) {
+                        int temp = numbers[j];
+                        numbers[j] = numbers[j + 1];
+                        numbers[j + 1] = temp;
+                        writer.write("After iteration " + (i * (numbers.length - 1) + j + 1) + ": ");
+                        for (int number : numbers) {
+                            writer.write(number + " ");
+                        }
+                        writer.write("\n");
                     }
                 }
-                writer.write(MessageFormat.format("{0} \n", Arrays.toString(array)));
-                writer.write("After iteration " + (i * (array.length - 1) + i + 1) + ": ");
-                writer.write("\n");
             }
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
     public static void parseJson(String jsonString) {
