@@ -1,5 +1,7 @@
 package JavaCollections.Task6;
-
+/* ЗАДАЧА :
+* Реализовать алгоритм сортировки слиянием.
+* */
 public class MergeSort {
     public static void merge(int[] arr, int l, int m, int r) {
         int n1 = m - l + 1;
