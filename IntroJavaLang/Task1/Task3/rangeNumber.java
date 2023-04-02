@@ -1,4 +1,4 @@
-package Task3;
+package IntroJavaLang.Task1.Task3;
 
 public class rangeNumber {
 

@@ -1,5 +1,4 @@
-package Task4;
-import java.security.KeyStore;
+package IntroJavaLang.Task1.Task4;
 import java.util.Scanner;
 public class primitiveCalculate {
 

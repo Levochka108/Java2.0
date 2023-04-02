@@ -1,4 +1,4 @@
-package Task2;
+package IntroJavaLang.Task1.Task2;
 
 public class factorialNumber {
     public static int factorial(int n) {

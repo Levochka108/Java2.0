@@ -1,8 +1,8 @@
 package ProgramMain;
-import Task1.triangleNumber;
-import Task2.factorialNumber;
-import Task3.rangeNumber;
-import Task4.primitiveCalculate;
+import IntroJavaLang.Task1.triangleNumber;
+import IntroJavaLang.Task1.Task2.factorialNumber;
+import IntroJavaLang.Task1.Task3.rangeNumber;
+import IntroJavaLang.Task1.Task4.primitiveCalculate;
 public class ProgramMain {
     public static void main(String[] args) {
         int n = 7;

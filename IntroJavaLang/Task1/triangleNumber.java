@@ -1,4 +1,4 @@
-package Task1;
+package IntroJavaLang.Task1;
 
 public class triangleNumber {
     public static int triangleNum(int n) {
