@@ -1,4 +1,4 @@
-package Task6;
+package JavaCollections.Task6;
 
 public class MergeSort {
     public static void merge(int[] arr, int l, int m, int r) {
