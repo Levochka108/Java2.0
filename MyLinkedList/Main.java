@@ -3,7 +3,7 @@ import java.util.LinkedList;
 
 import static MyLinkedList.Node.reverseLinkedList;
 
-class Test{
+class Main {
     public static void main(String[] args) {
 
         // Example of LinkedList to be reversed
@@ -13,6 +13,7 @@ class Test{
         linkedList.add("Second");
         linkedList.add("Third");
         linkedList.add("Fourth");
+        linkedList.add("Fifth");
         System.out.println("LinkedList: " + linkedList);
 
         // Example of reversed LinkedList
@@ -26,8 +27,13 @@ class Test{
         queue.enqueue("Second in Queue");
         queue.enqueue("Third in Queue");
 
+        System.out.println("Dequeued element: " + queue.dequeue());
         System.out.println("First element in queue: " + queue.first());
         System.out.println("Dequeued element: " + queue.dequeue());
+        System.out.println("First element in queue: " + queue.first());
+
+
+
     }
 
 }

@@ -1,6 +1,4 @@
 package MyLinkedList;
-
-
 import java.util.LinkedList;
 import java.util.NoSuchElementException;
 
