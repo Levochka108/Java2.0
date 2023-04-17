@@ -22,4 +22,15 @@ public class TempData {
         workNumber = workPhone;
         addNumber = additionalNumber;
     }
+
+    @Override
+    public String toString() {
+        return "TempData{" +
+                "userName='" + userName + '\'' +
+                ", userLastName='" + userLastName + '\'' +
+                ", number='" + number + '\'' +
+                ", workNumber='" + workNumber + '\'' +
+                ", addNumber='" + addNumber + '\'' +
+                '}';
+    }
 }
